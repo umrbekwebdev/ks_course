@@ -1,13 +1,17 @@
 
-const chat_id = '-1001274004245', 
-botID ='bot1690645634:AAFV31gPaGrOsY90VRdeZuxfeZqfWkfa3D0';
+const chat_id = '324304236', 
+botID ='bot5404291053:AAHAR8V62-ZnpSoOeLYdCZprV09uJmxN6YE';
 const telegramURL = `https://api.telegram.org/${botID}/sendMessage`;
 
 document.querySelector('#messageForm').addEventListener("submit", async e => { // When the user submits the form
     e.preventDefault(); // Don't submit
-    let text = JSON.stringify( // Convert the form data to a string to send as our Telegram message
+    let texty = JSON.stringify( // Convert the form data to a string to send as our Telegram message
         Object.fromEntries(new FormData(e.target).entries()), // Convert the form data to an object.
         null, 2); // Prettify the JSON so we can read the data easily
+    
+    text = JSON.parse(texty);
+    text = `🙋‍♂️Ismi: - ${text.name} \n🔗Telegram Username: - ${text.telegram_username} \n📞Telefon raqami: +998-${text.phone_number} \n📩Xabar: - ${text.message}`;
+    console.log(JSON.stringify({ chat_id, text }));
     const sendMessage = await fetch(telegramURL, { // Send the request to the telegram API
         method: 'POST',
         headers: { "Content-Type": "application/json" }, // This is required when sending a JSON body.

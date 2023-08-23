@@ -157,13 +157,13 @@
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Ismingiz" required>
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Ismingiz" required>
                                         <label for="name">Ismingiz</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="username" placeholder="Sizning telegram username ixtiyoriy">
+                                        <input type="text" class="form-control" name="telegram_username" id="username" placeholder="Sizning telegram username ixtiyoriy">
                                         <label for="username"><i class="fab fa-telegram-plane  text-info"></i> Mn: @umrbekwebdev (ixtiyoriy)</label>
                                     </div>
                                 </div>
@@ -171,7 +171,7 @@
                                     <div class="input-group flex-nowrap">
                                         <div class="input-group-text w-auto text-center">+998</div>
                                         <div class="form-floating w-100">
-                                            <input type="tel" class="form-control" id="tel" placeholder="Subject" pattern="[0-9]{9}" required>
+                                            <input type="tel" class="form-control" name="phone_number" id="tel" placeholder="Subject" pattern="[0-9]{9}" required>
                                             <label for="tel"><i class="fas fa-phone-square-alt text-info"></i> Mn: 901234567</label>
                                         </div>
                                     </div>
@@ -179,7 +179,7 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                        <textarea class="form-control" name="message" placeholder="Leave a message here" id="message"
                                             style="height: 150px"></textarea>
                                         <label for="message">Xabaringizni kiriting</label>
                                     </div>
@@ -309,9 +309,9 @@
 
 
         <!-- Features Start -->
-        <div class="container-xxl py-6">
+        <div class="container-xxl py-6 " id="dastur">
             <div class="container">
-                <div class="row g-5 " id="dastur">
+                <div class="row g-5 " >
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <h2 class="mb-4 border-bottom pb-3">Kurs dasturi</h2>
                         <div class="row flex-wrap gap-4">
