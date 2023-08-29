@@ -69,6 +69,12 @@
     });
 
 
+    // hide navbar on click
+    $(document).on('click',function(){
+        $('.collapse').collapse('hide');
+    })
+
+
     // Client carousel
     $(".client-carousel").owlCarousel({
         autoplay: true,
@@ -97,4 +103,6 @@
     });
     
 })(jQuery);
+
+
 
