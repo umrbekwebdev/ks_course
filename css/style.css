@@ -604,6 +604,6 @@ li:before {
 }
 
 .icon-color {
-    color: #1f38fa;
+    color: var(--primary);
 
 }
