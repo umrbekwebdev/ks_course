@@ -303,6 +303,9 @@ li:before {
 
 
 /*** Testimonial ***/
+
+
+
 .testimonial-carousel .owl-item .testimonial-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
     border: 1px solid transparent;
@@ -345,6 +348,13 @@ li:before {
 .testimonial-carousel .owl-nav .owl-next:hover {
     color: #FFFFFF;
     background: var(--primary);
+}
+.testim{
+    transform: scale(0.2)!important;
+}
+.testim, #testimonial-img {
+    width: 640px ;
+    height: 480px ;
 }
 
 
